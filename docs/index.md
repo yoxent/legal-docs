@@ -7,9 +7,9 @@ layout: default
 
 Store-compliance documents by app. Select a project:
 
-| App | Package | Privacy Policy |
-|-----|---------|----------------|
-| **One Remote** | `com.vorithstudio.smarttvremote` | [Privacy Policy](one-remote/privacy-policy.md) |
+| App | Package | Privacy Policy | Terms of Service | Account & Data Deletion |
+|-----|---------|----------------|------------------|-------------------------|
+| **One Remote** | `com.vorithstudio.smarttvremote` | [Privacy Policy](one-remote/privacy-policy.md) | [Terms](one-remote/terms-of-service.md) | [Deletion](one-remote/account-and-data-deletion.md) |
 
 ---
 
