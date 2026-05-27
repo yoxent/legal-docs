@@ -6,10 +6,10 @@ title: Terms of Service — One Remote
 
 **Last updated:** May 31, 2026  
 **App:** One Remote (`com.vorithstudio.smarttvremote`)  
-**Developer:** Vincent Oliver Veran  
+**Developer / Provider:** Vorith Studio (trade name of Vincent Oliver Veran, Philippines)  
 **Contact:** vorithstudio@gmail.com
 
-These Terms of Service (“Terms”) govern your use of **One Remote** (“the App”) provided by **Vincent Oliver Veran** (“we”, “us”). By downloading, installing, or using the App, you agree to these Terms. If you do not agree, do not use the App.
+These Terms of Service (“Terms”) govern your use of **One Remote** (“the App”) provided by **Vorith Studio** (a trade name operated by **Vincent Oliver Veran**, Philippines) (“we”, “us”). By downloading, installing, or using the App, you agree to these Terms. If you do not agree, do not use the App.
 
 Our [Privacy Policy](privacy-policy.md) explains how we handle information. It is incorporated into these Terms by reference.
 
@@ -59,7 +59,7 @@ We may release updates for security, compatibility, or features. The App may not
 
 ## 5. Intellectual property
 
-The App, including software, design, trademarks, and “One Remote”, is owned by **Vincent Oliver Veran** or licensors. Third-party brand names belong to their owners.
+The App, including software, design, trademarks, and “One Remote”, is owned by **Vorith Studio** (trade name of **Vincent Oliver Veran**) or licensors. Third-party brand names belong to their owners.
 
 ---
 
@@ -79,7 +79,7 @@ Some jurisdictions do not allow certain disclaimers; our liability is limited to
 
 ## 8. Limitation of liability
 
-TO THE MAXIMUM EXTENT PERMITTED BY LAW, **VINCENT OLIVER VERAN** WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE APP.
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, **VORITH STUDIO** (TRADE NAME OF **VINCENT OLIVER VERAN**) WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE APP.
 
 OUR TOTAL LIABILITY WILL NOT EXCEED THE GREATER OF (A) AMOUNTS YOU PAID FOR THE APP OR **PRO** IN THE **12 MONTHS** BEFORE THE CLAIM, OR (B) **PHP 500** (or local equivalent).
 
@@ -117,6 +117,6 @@ We may update these Terms and the “Last updated” date. Continued use after c
 
 ## 13. Contact
 
-**Vincent Oliver Veran**  
+**Vorith Studio** (trade name of **Vincent Oliver Veran**)  
 **vorithstudio@gmail.com**  
 Philippines

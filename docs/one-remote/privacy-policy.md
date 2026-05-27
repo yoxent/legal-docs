@@ -6,7 +6,7 @@ title: Privacy Policy — One Remote
 
 **Last updated:** May 31, 2026  
 **App:** One Remote (`com.vorithstudio.smarttvremote`)  
-**Developer / data controller:** Vincent Oliver Veran (Philippines)  
+**Developer / data controller:** Vincent Oliver Veran (Philippines), doing business as **Vorith Studio**  
 **Contact:** vorithstudio@gmail.com
 
 This Privacy Policy describes how **One Remote** (“the App”, “we”, “us”) accesses, collects, uses, stores, and shares information when you install or use the App on **Android** or **iOS**. It is intended to meet [Google Play’s User Data policy](https://support.google.com/googleplay/android-developer/answer/10144311?hl=en) and to align with the disclosures you make in Play Console’s **Data safety** section (and equivalent store disclosures elsewhere).
@@ -191,7 +191,7 @@ We may update this policy and change the “Last updated” date. Material chang
 
 ## 13. Contact us
 
-**Vincent Oliver Veran**  
+**Vincent Oliver Veran** (Philippines) — doing business as **Vorith Studio**  
 Email: **vorithstudio@gmail.com**  
 Philippines
 

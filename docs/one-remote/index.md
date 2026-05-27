@@ -5,7 +5,7 @@ title: One Remote — Legal
 # One Remote
 
 **Package:** `com.vorithstudio.smarttvremote`  
-**Developer:** Vincent Oliver Veran
+**Developer:** Vorith Studio (trade name of Vincent Oliver Veran, Philippines)
 
 | Document | Link |
 |----------|------|

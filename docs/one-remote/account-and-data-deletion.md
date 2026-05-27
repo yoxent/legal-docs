@@ -5,7 +5,7 @@ title: Account and data deletion — One Remote
 # Account and data deletion
 
 **App:** One Remote (`com.vorithstudio.smarttvremote`)  
-**Developer:** Vincent Oliver Veran  
+**Developer:** Vorith Studio (trade name of Vincent Oliver Veran, Philippines)  
 **Contact:** vorithstudio@gmail.com  
 **Last updated:** May 31, 2026
 
