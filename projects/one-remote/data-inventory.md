@@ -17,7 +17,7 @@ Must match [`docs/one-remote/privacy-policy.md`](../../docs/one-remote/privacy-p
 | In-app feedback to webhook? | **Yes** — category, message, platform, app version, UTC timestamp |
 | Ads (AdMob)? | **Yes** — free tier; UMP consent; Pro removes ads |
 | In-app purchases? | **Yes** — non-consumable **Pro** (`one_remote_pro`) via Play Billing / App Store |
-| First-party analytics server? | **No** |
+| Analytics / crash reporting | **Yes** — **Firebase Analytics (events only)** + **Firebase Crashlytics** (Google-hosted) |
 | Target audience | **Not for under 13** (`tagForUnderAgeOfConsent: false` in UMP) |
 
 ---
@@ -31,8 +31,9 @@ Declare accurately in Console; this table is a worksheet, not legal advice.
 | User IDs | No account IDs | — | — | Store handles purchase identity |
 | Device or other IDs | **Yes** (ads) | **Yes** (Google/AdMob) | Advertising | AAID / IDFA via AdMob |
 | App interactions | **Yes** (ads) | **Yes** (Google) | Advertising, analytics for ads | Ad impressions/clicks |
-| Crash logs | **No** (current) | — | — | No Crashlytics in `pubspec.yaml` |
-| Diagnostics | **No** (current) | — | — | |
+| App interactions (analytics events) | **Yes** (Firebase) | **Yes** (Google/Firebase) | Analytics | Events-only; no automatic screen tracking; properties may include locale-derived country/region, TV brand, and Pro entitlement status |
+| Crash logs | **Yes** (Firebase Crashlytics) | **Yes** (Google/Firebase) | App functionality | Stability, diagnostics |
+| Diagnostics | **Yes** (Firebase Crashlytics) | **Yes** (Google/Firebase) | App functionality | Stability, diagnostics |
 | Other: feedback message | **If user submits** | **Yes** (webhook/Sheet) | Support | Voluntary free text |
 | Purchase history | **Yes** (entitlement) | **Yes** (Google/Apple) | App functionality | Pro unlock |
 | Personal info in feedback | **Optional** | **Yes** | Support | User must not send secrets |
@@ -66,6 +67,8 @@ Declare accurately in Console; this table is a worksheet, not legal advice.
 | `google_mobile_ads` | Banner + interstitial ads, UMP consent | **Yes** |
 | `in_app_purchase` | Pro non-consumable | **Yes** (via store) |
 | `app_tracking_transparency` | iOS ATT before ads | iOS only |
+| `firebase_analytics` | Analytics events (events only) | **Yes** |
+| `firebase_crashlytics` | Crash reports & diagnostics | **Yes** |
 | `http` | Feedback webhook POST | If feedback enabled in build |
 | `shared_preferences` | Local TV/layout/pairing storage | On-device only — not “collected” off device |
 | `url_launcher` | Open privacy policy URL | No data collection |
@@ -73,7 +76,7 @@ Declare accurately in Console; this table is a worksheet, not legal advice.
 | `flutter_multicast_lock` | SSDP/mDNS discovery | On-device network only |
 | `mqtt_client`, `multicast_dns`, etc. | TV control / discovery | Local network only |
 
-**Not present:** Firebase, Unity Analytics, separate crash SDK.
+**Notes:** Firebase is present for analytics/crash reporting; update Play Console **Data safety** accordingly.
 
 ---
 

@@ -25,7 +25,7 @@ If you do not agree with this policy, do not use the App.
 | Ads | Free tier may show **Google AdMob** ads (banner/interstitial) after consent where required |
 | Purchases | Optional **Pro** upgrade via Google Play / App Store removes ads and unlocks features |
 | Children | Not directed to children under 13 |
-| Not collected | No accounts, GPS/location, contacts, push notifications, or first-party analytics/crash reporting (current version) |
+| Not collected | No accounts, GPS/location, contacts, or push notifications. The App uses **Firebase Analytics (events only)** and **Firebase Crashlytics** to help us understand feature usage and improve stability. |
 | Delete your data | [Account & data deletion](account-and-data-deletion.md) |
 
 ---
@@ -42,7 +42,7 @@ To avoid doubt, we do **not** collect or operate:
 - **Push notifications** (we do not send marketing or alert pushes)  
 - **Marketing email lists** from in-app use (we only email if you contact us or we reply to support)  
 - TV viewing history or what you watch (on our servers)  
-- A first-party analytics or crash-reporting backend (no Crashlytics-style SDK in the current release)
+- A first-party analytics or crash-reporting backend that we host ourselves
 
 If we add collection later, we will update this policy and store disclosures before the change ships.
 
@@ -76,7 +76,14 @@ We do **not** collect what you watch on TV or viewing history on our servers.
 
 **Google Play / App Store:** Store platforms may collect information per their own policies when you install or update the App.
 
-We do not run our own first-party analytics server in the current version.
+**Analytics & crash reporting (Firebase):** The App uses **Firebase Analytics** and **Firebase Crashlytics** (Google) to help us understand feature usage and improve stability:
+
+- **Firebase Analytics (events only):** We log app events about feature usage (for example pairing and purchase/restore flows). Event properties may include **TV brand** (for pairing success), **purchase/entitlement status**, and an **approximate country/region derived from your device locale** (not GPS). We do **not** enable automatic screen-view tracking and we do not log `screen_view` events.
+- **Firebase Crashlytics:** We collect crash reports and related diagnostic information (such as stack traces and device/app metadata) to diagnose crashes and improve reliability.
+
+We do not include your TV’s local network identifiers (for example IP address, Wi‑Fi SSID, or MAC address) in analytics events.
+
+We do not run our own first-party analytics server; these services are provided by Google/Firebase.
 
 ### 2.4 Android permissions
 
@@ -145,6 +152,7 @@ We do not sell personal information. We may share information with:
 | Provider | Purpose | Privacy information |
 |----------|---------|---------------------|
 | **Google** (Play, Play Billing, AdMob, UMP) | Distribution, billing, ads, consent | https://policies.google.com/privacy |
+| **Google Firebase** (Analytics, Crashlytics) | App analytics (events only), crash reporting | https://policies.google.com/privacy |
 | **Apple** (App Store, In-App Purchase) | iOS distribution and billing | https://www.apple.com/legal/privacy/ |
 | **Feedback webhook host** (e.g. Google Apps Script / Google Sheets) | Store voluntary feedback you submit | https://policies.google.com/privacy |
 
@@ -178,6 +186,7 @@ If we are involved in a merger, acquisition, or asset sale, information may be t
 | In-app feedback records | Up to 2 years in our feedback store, unless you ask us to delete sooner |
 | Support emails | Up to 2 years |
 | Purchase entitlements | Processed by Apple/Google; we rely on store records to restore **Pro** |
+| Firebase Analytics (events only) & Crashlytics | Retained according to our Google/Firebase settings and Google’s policies |
 
 ---
 
