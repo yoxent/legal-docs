@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      {%- if page.title -%}{{ page.title }}{%- else -%}{{ site.title | default: "Legal documents" }}{%- endif -%}
+    </title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
+
+    <script>
+      (() => {
+        try {
+          const key = "theme-preference";
+          const pref = localStorage.getItem(key);
+          if (pref === "light" || pref === "dark") {
+            document.documentElement.dataset.theme = pref;
+          }
+        } catch {
+          // ignore (storage blocked)
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-title" href="{{ '/' | relative_url }}">
+          {{ site.title | default: "Legal documents" }}
+        </a>
+
+        <div class="theme-switcher">
+          <label class="theme-switcher__label" for="themeSelect">Theme</label>
+          <select id="themeSelect" class="theme-switcher__select" name="theme">
+            <option value="system">System</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>© {{ site.time | date: '%Y' }} {{ site.title | default: "Legal documents" }}</span>
+      </div>
+    </footer>
+
+    <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+  </body>
+</html>
