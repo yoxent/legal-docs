@@ -2,7 +2,7 @@
 
 **Package:** `com.vorithstudio.smarttvremote`  
 **Source reviewed:** `E:\Projects\Flutter\one_remote` (Android manifest, `pubspec.yaml`, compliance docs)  
-**Last reviewed:** May 31, 2026
+**Last reviewed:** May 28, 2026
 
 Must match [`docs/one-remote/privacy-policy.md`](../../docs/one-remote/privacy-policy.md) and Play Console **Data safety**.
 
@@ -55,7 +55,7 @@ Declare accurately in Console; this table is a worksheet, not legal advice.
 
 **Runtime:** Local network prompts may appear per OS version (pairing UI references Wi‑Fi/local network).
 
-**Merged manifests:** Release build may add AdMob-related entries (e.g. `AD_ID`) from `google_mobile_ads` — verify merged manifest before final Data safety submission.
+**Merged manifests:** Release build may add AdMob-related entries (e.g. `com.google.android.gms.permission.AD_ID`) from `google_mobile_ads` — verify merged manifest before final Data safety submission. Disclosed in policy §2.4.
 
 ---
 
@@ -103,5 +103,7 @@ Declare accurately in Console; this table is a worksheet, not legal advice.
 | Privacy link in Settings | [x] scaffold |
 | UMP before ads | [x] `AdConsentCoordinator` |
 | Ad privacy options in Settings | [x] when UMP requires |
-| Data safety form matches policy | [ ] before submit |
+| Data safety form matches policy | [ ] before submit — see [`PLAY_STORE_CHECKLIST.md`](../../PLAY_STORE_CHECKLIST.md) |
+| Terms + deletion URLs in store listings (recommended) | [ ] |
+| `PRIVACY_POLICY_URL` without `.html` suffix | [ ] |
 | Production AdMob app ID (not test ID in manifest) | [ ] release blocker per project docs |
