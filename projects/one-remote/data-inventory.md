@@ -2,7 +2,7 @@
 
 **Package:** `com.vorithstudio.smarttvremote`  
 **Source reviewed:** `E:\Projects\Flutter\one_remote` (Android manifest, `pubspec.yaml`, compliance docs)  
-**Last reviewed:** May 28, 2026
+**Last reviewed:** June 4, 2026
 
 Must match [`docs/one-remote/privacy-policy.md`](../../docs/one-remote/privacy-policy.md) and Play Console **Data safety**.
 
@@ -70,7 +70,7 @@ Declare accurately in Console; this table is a worksheet, not legal advice.
 | `firebase_analytics` | Analytics events (events only) | **Yes** |
 | `firebase_crashlytics` | Crash reports & diagnostics | **Yes** |
 | `http` | Feedback webhook POST | If feedback enabled in build |
-| `shared_preferences` | Local TV/layout/pairing storage | On-device only — not “collected” off device |
+| `shared_preferences` (+ encrypted storage where used) | Local TV/layout/pairing storage (Samsung/LG/Hisense/Android TV — see policy §2.2) | On-device only — not “collected” off device |
 | `url_launcher` | Open privacy policy URL | No data collection |
 | `package_info_plus` | App version in feedback | Bundled in feedback payload |
 | `flutter_multicast_lock` | SSDP/mDNS discovery | On-device network only |

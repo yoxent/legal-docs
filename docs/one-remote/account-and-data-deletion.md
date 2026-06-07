@@ -7,7 +7,7 @@ title: Account and data deletion — One Remote
 **App:** One Remote (`com.vorithstudio.smarttvremote`)  
 **Developer:** Vorith Studio (trade name of Vincent Oliver Veran, Philippines)  
 **Contact:** vorithstudio@gmail.com  
-**Last updated:** May 28, 2026
+**Last updated:** June 4, 2026
 
 How to delete data associated with **One Remote**, as described in our [Privacy Policy](privacy-policy.md).
 
@@ -23,7 +23,7 @@ One Remote has **no user accounts**. Most data lives **on your device**. Volunta
 
 | Data | How to delete |
 |------|----------------|
-| **Saved TVs, layouts, pairing keys, settings** | Android **Settings → Apps → One Remote → Storage → Clear data**, or uninstall the App |
+| **Saved TVs, layouts, pairing keys, settings** | Remove a TV in the App (unpair / delete saved device), or Android **Settings → Apps → One Remote → Storage → Clear data**, or uninstall the App |
 | **Pro entitlement** | Tied to Google Play / App Store — uninstalling does not cancel ownership; use store purchase history if needed |
 | **Ad identifiers** | Android/iOS system settings → reset advertising ID / limit ad tracking |
 | **In-app feedback you submitted** | Email **vorithstudio@gmail.com** (include approximate date and message excerpt) |

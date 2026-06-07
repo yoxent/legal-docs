@@ -4,7 +4,7 @@ title: Privacy Policy — One Remote
 
 # Privacy Policy
 
-**Last updated:** May 28, 2026  
+**Last updated:** June 4, 2026  
 **App:** One Remote (`com.vorithstudio.smarttvremote`)  
 **Developer / data controller:** Vincent Oliver Veran (Philippines), doing business as **Vorith Studio**  
 **Contact:** vorithstudio@gmail.com
@@ -21,7 +21,7 @@ If you do not agree with this policy, do not use the App.
 |-------|----------------|
 | Account required | No — the App does not offer user accounts |
 | Data on our servers | We do not operate a user-profile backend; optional **in-app feedback** is sent to a service we configure (see Section 2.1) |
-| On-device data | Saved TVs, pairing keys, layouts, and settings stay on your device |
+| On-device data | Saved TVs, pairing secrets, layouts, and settings stay on your device only — not uploaded for remote control |
 | Ads | Free tier may show **Google AdMob** ads (banner/interstitial) after consent where required |
 | Purchases | Optional **Pro** upgrade via Google Play / App Store removes ads and unlocks features |
 | Children | Not directed to children under 13 |
@@ -54,17 +54,44 @@ If we add collection later, we will update this policy and store disclosures bef
 
 The App does not require registration or a username.
 
-### 2.2 Information stored on your device
+### 2.2 Local TV pairing and connection data
 
-To work as a remote control, the App stores information **locally** using on-device storage (for example `SharedPreferences`), such as:
+**One Remote** stores information on your device so it can reconnect to TVs you have paired, **without sending that pairing data to our servers**.
 
-- Saved TV / device names, addresses, and connection details for your **local network**
-- Custom remote layouts and app preferences
-- Brand-specific pairing data (for example LG client keys, Samsung trust material) needed to reconnect to your TVs
+#### What we store locally (on your phone or tablet only)
 
-This data is not uploaded to our servers for cloud backup in the current version. Delete it by clearing app storage or uninstalling the App.
+| TV brand / type | What is stored | Where |
+|-----------------|----------------|--------|
+| **Samsung TVs** | A remote-control authorization token provided by your TV during pairing | Encrypted device storage |
+| **LG TVs** | A client key provided by your TV during pairing | App storage |
+| **Hisense TVs** | A flag that you completed TV PIN pairing for a given TV (Hisense does not provide a long-lived token) | Encrypted device storage |
+| **Android TV** | Cryptographic pairing material (certificates/keys) needed for the Android TV remote protocol | App private storage |
+| **Saved TVs** | TV name, brand, network address (for example IP), layout preferences, and which TV was last used | On-device storage |
+
+We also store **custom remote layouts** and general **app preferences** on your device.
+
+#### Why we store it
+
+To let you use the remote after closing the App, switch between saved TVs, and reconnect on your home Wi‑Fi without pairing again every time.
+
+#### When we delete it
+
+- **Per TV:** When you remove a TV in the App (unpair / delete saved device), we clear that TV’s pairing data from the device.
+- **All data:** Uninstalling the App removes all locally stored data.
+
+#### What we do not do
+
+We do **not** upload Samsung, LG, Hisense, or Android TV pairing secrets to our servers for remote control. Control commands are sent **directly** between your device and your TV on your local network, except where a separate service applies (for example analytics or ads — see Sections 2.3 and 5).
 
 We do **not** collect what you watch on TV or viewing history on our servers.
+
+#### Security (pairing data)
+
+Sensitive pairing values use platform-protected storage where supported (for example encrypted storage on Android). Connection to TVs may use encrypted channels (for example WSS/TLS) depending on TV brand and firmware.
+
+#### Your choices
+
+You can remove a paired TV at any time in the App. Without pairing, the App cannot control that TV. You can also clear all on-device data via system app settings or by uninstalling; see [Account & data deletion](account-and-data-deletion.md).
 
 ### 2.3 Information collected automatically
 
@@ -182,7 +209,7 @@ If we are involved in a merger, acquisition, or asset sale, information may be t
 
 | Data type | Retention |
 |-----------|-----------|
-| On-device pairings and settings | Until you clear app data or uninstall |
+| On-device pairings and settings | Until you remove a saved TV in the App, clear app data, or uninstall |
 | In-app feedback records | Up to 2 years in our feedback store, unless you ask us to delete sooner |
 | Support emails | Up to 2 years |
 | Purchase entitlements | Processed by Apple/Google; we rely on store records to restore **Pro** |
@@ -192,7 +219,7 @@ If we are involved in a merger, acquisition, or asset sale, information may be t
 
 ## 7. Security
 
-We use reasonable measures including HTTPS for feedback and store-related traffic, and we rely on platform security for on-device storage. No method of transmission or storage is 100% secure.
+We use reasonable measures including HTTPS for feedback and store-related traffic. For TV pairing data, we use platform-protected and encrypted on-device storage where supported and encrypted local channels where the TV protocol allows (see Section 2.2). No method of transmission or storage is 100% secure.
 
 If we learn of a security incident that affects your personal information and the law requires notification, we will take steps to notify you and regulators as applicable.
 
@@ -230,7 +257,7 @@ We are based in the **Philippines**. Service providers (Google, Apple, etc.) may
 
 ## 11. Third-party TV platforms
 
-The App communicates with TVs and devices using manufacturer protocols (for example Samsung, LG, or Hisense). **We are not affiliated with or endorsed by those manufacturers.** Their brand names are trademarks of their respective owners. Those devices and manufacturers have their own privacy practices, which we do not control.
+The App communicates with TVs and devices using manufacturer protocols (for example Samsung, LG, Hisense, and Android TV). **We are not affiliated with or endorsed by those manufacturers or Google.** Their brand names are trademarks of their respective owners. Those devices and manufacturers have their own privacy practices, which we do not control.
 
 ---
 
